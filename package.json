@@ -34,6 +34,11 @@
     "backend": "cd backend && node index.js",
     "start-both": "npm run backend & npm start"
   },
+  "jest": {
+    "moduleNameMapper": {
+      "^axios$": "axios/dist/node/axios.cjs"
+    }
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
